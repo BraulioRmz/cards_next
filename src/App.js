@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Deck from './components/deck/deck';
+
 
 function App() {
   return (
+   
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <pre className="header">C a r d s   P r o y e c t</pre>
+        <Deck path="all/" ></Deck>
+        <h2 class="text" >D e c k</h2>
+        <Deck  path="table/" flipped="2"/>
+        <h2 class="text" >H a n d</h2>
+        <Deck  path="deck/2" flipped="2"/>
+    
     </div>
   );
 }
